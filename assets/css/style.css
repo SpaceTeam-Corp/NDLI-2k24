@@ -118,3 +118,15 @@ body {
     background: none;
     color: var(--fourth-color);
 }
+
+.bits {
+    color: white;
+    margin: 32px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.bits:hover {
+    color: red;
+    transition: 0.2s;
+}
