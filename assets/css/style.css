@@ -1,0 +1,60 @@
+:root {
+    --backgound-color : #F2F2F2;
+    --primary-color: #0597F2;
+    --second-color: #0477BF;
+    --third-color: #05AFF2;
+    --fourth-color: #5CD7F2;
+}
+
+@font-face {
+    font-family: Dyna;
+    src: url(../fonts/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Dyna;
+    background: #F2F2F2;
+}
+
+#videoBg {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-div, .second-div {
+    height: 100vh;
+}
+
+.second-div {
+    border-radius: 35px;
+    background: var(--second-color);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#btnPlay {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #btnPlay:hover {
+    background: #ddd;
+    color: black;
+  }

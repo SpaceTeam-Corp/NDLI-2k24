@@ -7,8 +7,25 @@
         <link href="./assets/css/style.css" rel="stylesheet">
     </head>
     <body>
+        <div class="main-div">
+            <video autoplay muted loop id="videoBg">
+                <source src="./assets/video/7031329_Light_Rays_1280x720.mp4" type="video/mp4">
+            </video>
 
-        <h1>Nuit de l'info</h1>
-    
+            <div class="content">
+                <h1>L'Océan, garant de la vie</h1>
+                <a href="#part2">Plonger dans le site</a>
+                <p class="credit-videos"><a href="https://fr.freepik.com/video-gratuite/rayons-du-soleil-brisent-surface-ocean-alors-que-vortex-vagues-forme-eclaboussures-blanches-sous-marines_3384991#fromView=search&page=1&position=13&uuid=7ecaa599-e598-4a7e-8213-c2fb454594ee">Vidéo de Spencer Frost Films</a></p>
+
+                <button id="btnPlay" onclick="PausePlay()">Pause</button>
+            </div>
+        </div>
+
+        <div class="second-div" id="part2">
+            <h1>Le corps et l'océan</h1>
+        </div>
+
+        <script src="./assets/js/pause-play.js"></script>
     </body>
 </html>
+
