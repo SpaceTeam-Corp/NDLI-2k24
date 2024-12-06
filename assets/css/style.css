@@ -125,15 +125,15 @@ body {
     color: var(--fourth-color);
 }
 
-.bits, .credits {
+footer a {
     color: white;
     margin: 32px;
-    font-size: 16px;
+    font-size: 32px;
     transition: 1s;
 }
 
-.bits:hover, .credits:hover {
-    color: red;
+footer a:hover {
+    color: var(--second-color);
     transition: 0.2s;
 }
 
