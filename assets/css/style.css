@@ -39,3 +39,9 @@ body {
   width: 320px;
   margin-left: 10px;
 }
+
+
+#warningMessage {
+  font-size: 1em;
+  font-weight: bold;
+}

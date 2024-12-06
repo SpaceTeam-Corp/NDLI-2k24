@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Chill Clicker</title>
 </head>
 
 <body>
-    <div id="hypnoDroneEventDiv">
-        <p class="hypnoDrone"><span id="hypnoDroneText"></span></p>
-    </div>
+    <audio controls autoplay muted loop>
+        <source src="./assets/mp3/Gia Margaret - Hinoki Wood (Official Video).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <div id="consoleDiv">
         <p class="consoleOld">
@@ -28,15 +29,31 @@
 
 
     <h2>Chill : <span id="chillness">0</span></h2>
+    <h3>CPS : <span id="cps">0</span></h3>
+    <h4>Chill par seconde : <span id="chillPerSecond">0</span></h4>
     <button class="button2" id="btnMakeChill" onclick="chillClick(1)">Be Chill</button>
-    <br/>
-
+    <br />
     <div class="chillguy">
-        <img id="chillImage" src="./assets/css/images-removebg-preview.png" alt="chillguy">
+        <img id="chillImage" height="280px" src="./assets/img/chill-guy.png" alt="chillguy">
     </div>
-    
-    <p id="warningMessage" style="color: red; display: none;">Pas assez chill !!</p>
-    
+    <p id="warningMessage" style="color: red; display: none;">-50% de chill, t'es pas assez chill !! Attends un peu, relax, prends le temps</p>
+    <br />
+    <button class="button2" id="btnBuyAutomate" onclick="buyAutomate()" style="display: none;">
+        Acheter un automate de chill (50 chill)
+    </button>
+    <button class="button2" id="btnBuyAutomates10" onclick="buyAutomates10()" style="display: none;">
+        Acheter 10 automates de chill (500 chill)
+    </button>
+    <h4>Automates de chill : <span id="automatesCount">0</span></h4>
+    <br />
+    <button class="button2" id="btnUpgradeClick" onclick="upgradeClick()" style="display: none;">
+        Augmenter la production par clic (+25%) (1000 chill)
+    </button>
+    <h4>Amélioration de clic : <span id="clickMultiplier">1</span>x</h4>
+    <h4>Efficacité des automates : <span id="automateEfficiency">1</span>x</h4>
+    <button class="button2" id="btnUpgradeAutomates" onclick="upgradeAutomates()" style="display: none;">
+        Améliorer l'efficacité des automates (+50%) (10 000 chill)
+    </button>
 
 
     <script src="./main.js"></script>
