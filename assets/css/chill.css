@@ -12,6 +12,9 @@ body {
     min-height: 100vh;
 }
 
+*{
+    user-select : none;
+}
 /* Audio Player */
 audio {
     position: absolute;
