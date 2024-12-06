@@ -1,13 +1,18 @@
+:root {
+    --backgound-color : #F2F2F2;
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif; /* a modifier j'ai pas d'inspi svp */
-    background-color: #e0f7fa; 
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     margin: 0;
     padding: 0;
 }
 
 h1 {
     font-family: sarina;
-    color: #020079; 
+    color: #05AFF2;; 
     text-align: center;
     margin-top: 20px;
     font-size: 2.5em; 
@@ -19,9 +24,9 @@ h1 {
     max-width: 800px;
     margin: auto;
     overflow: hidden;
-    border: 5px solid #020079; 
+    border: 5px solid #05AFF2;; 
     border-radius: 10px; 
-    box-shadow: 0 4px 20px #020079; 
+    box-shadow: 0 4px 20px #05AFF2;; 
 }
 
 .carousel-images {
@@ -47,7 +52,7 @@ button {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.8); 
-    border: 2px solid #020079; 
+    border: 2px solid #05AFF2;; 
     border-radius: 5px; 
     cursor: pointer;
     padding: 10px 15px; 
@@ -57,7 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: #020079; 
+    background-color: #05AFF2;; 
     color: white; 
 }
 
@@ -73,7 +78,12 @@ button:hover {
     text-align: center;
     font-size: 1.5em; 
     margin-top: 10px;
-    color: #020079; 
+    color: #05AFF2; 
     font-weight: bold; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+
+.home a, .home i{
+    color: var(--backgound-color);
+    font-size: 2em;
 }

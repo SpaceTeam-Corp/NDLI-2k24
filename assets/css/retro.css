@@ -3,6 +3,10 @@
     font-family: "Press Start 2P", system-ui;
 }
 
+:root {
+    --backgound-color : #F2F2F2;
+}
+
 html{
     background-image: url(../img/background-retro.jpg);
     background-size: cover;
@@ -30,4 +34,9 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.home a, .home i{
+    color: var(--backgound-color);
+    font-size: 2em;
 }
