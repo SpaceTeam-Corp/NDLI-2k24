@@ -1,0 +1,110 @@
+/* Style général */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Audio Player */
+audio {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.7;
+}
+
+/* Console Div */
+#consoleDiv {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.console,
+.consoleOld {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #555;
+}
+
+.pulsate {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Boutons */
+.button2 {
+    background-color: #76c7c0;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.button2:hover {
+    background-color: #4fa3a0;
+    transform: scale(1.1);
+}
+
+/* Chill Guy Image */
+.chillguy img {
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Warning Message */
+#warningMessage {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Informations */
+h2, h3, h4 {
+    margin: 5px;
+    font-family: "Verdana", sans-serif;
+}
+
+h2 {
+    color: #444;
+    font-size: 28px;
+}
+
+h3, h4 {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Animation pour le compteur de chill */
+#chillness {
+    font-size: 32px;
+    font-weight: bold;
+    color: #76c7c0;
+    transition: transform 0.2s;
+}
+
+#chillness:hover {
+    transform: scale(1.2);
+}
