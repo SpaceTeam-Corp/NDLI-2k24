@@ -4,17 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <h1></h1>
-    <div class="chillguy"> 
-        <img src="./assets\css/images-removebg-preview.png" alt="chillguy">
+    <div id="hypnoDroneEventDiv">
+        <p class="hypnoDrone"><span id="hypnoDroneText"></span></p>
     </div>
 
-    <button>Be chill !</button>
-    <script src="./scripts.js"></script>
+    <div id="consoleDiv">
+        <p class="consoleOld">
+            <span>&nbsp;.&nbsp;</span><span id="readout5"></span><br />
+            <span>&nbsp;.&nbsp;</span><span id="readout4"></span><br />
+            <span>&nbsp;.&nbsp;</span><span id="readout3"></span><br />
+            <span>&nbsp;.&nbsp;</span><span id="readout2"></span><br />
+        </p>
+        <p class="console">
+            <span>&nbsp;>&nbsp;</span><span id="readout1">Welcome to Chill Guy Clicker</span><span id="cursor"
+                class="pulsate">|</span>
+        </p>
+    </div>
+
+
+    <h2>Chill : <span id="chillness">0</span></h2>
+    <button class="button2" id="btnMakeChill" onclick="chillClick(1)">Be Chill</button>
+    <br/>
+
+    <div class="chillguy">
+        <img id="chillImage" src="./assets/css/images-removebg-preview.png" alt="chillguy">
+    </div>
+    
+    <p id="warningMessage" style="color: red; display: none;">Pas assez chill !!</p>
+    
+
+
+    <script src="./main.js"></script>
 </body>
 
 </html>

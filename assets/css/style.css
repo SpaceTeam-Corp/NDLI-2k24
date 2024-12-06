@@ -1,9 +1,41 @@
-body{
-    position: relative;
+body {
+  position: relative;
 }
-.chillguy{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width : 100%;
+
+.chillguy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#consoleDiv {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  float: left;
+  width: 100%;
+}
+
+#topDIv {
+  float: left;
+  width: 100%;
+}
+
+#leftColumn {
+    margin-top: 30px;
+  float: left;
+  width: 275px;
+}
+
+#middleColumn {
+  float: left;
+  width: 275px;
+  margin-left: 10px;
+}
+
+#rightColumn {
+  float: left;
+  width: 320px;
+  margin-left: 10px;
 }
