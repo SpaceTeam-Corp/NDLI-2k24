@@ -6,7 +6,7 @@ const captions = [
     "Semi-HPI (juste un peu teubé)",
     "La madeleine de proust",
     "Droite, Droite, Droite mais pas gauche",
-    "Perdue (La pour les quotas)",
+    "Perdue (Quota)",
     "R&T en légende",
 ];
 
@@ -29,6 +29,9 @@ function showSlide(index) {
             caption.textContent = captions[currentSlide]; 
         }
     });
+
+    const offset = -currentSlide * 100; 
+    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
 }
 
 function changeSlide(direction) {
