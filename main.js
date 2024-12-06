@@ -99,6 +99,31 @@ function buyAutomates10() {
 
     document.getElementById("automatesCount").textContent = automates;
 
+    if (automates >= 500) {
+      document.getElementById("btnBuyAutomates100").style.display ="inline-block";
+    }
+
+ 
+    if (!automateInterval) {
+      automateInterval = setInterval(() => {
+        chillness += automates; 
+        updateUI();
+      }, 1000);
+    }
+
+    updateUI(); 
+  }
+}
+
+function buyAutomates100() {
+  if (chillness >= 5000) {
+    chillness -= 5000;
+    automates += 100; 
+    chillPerSecond = automates; 
+    updateAutomateProduction();
+
+    document.getElementById("automatesCount").textContent = automates;
+
  
     if (!automateInterval) {
       automateInterval = setInterval(() => {
