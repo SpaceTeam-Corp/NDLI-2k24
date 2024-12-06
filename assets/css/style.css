@@ -101,6 +101,12 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
+.appli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
 .content a:hover {
     background: #ddd;
@@ -119,14 +125,24 @@ body {
     color: var(--fourth-color);
 }
 
-.bits {
+footer a {
     color: white;
     margin: 32px;
-    font-size: 16px;
+    font-size: 32px;
     transition: 1s;
 }
 
-.bits:hover {
-    color: red;
+footer a:hover {
+    color: var(--second-color);
     transition: 0.2s;
 }
+
+footer {
+    bottom: 0;
+    height: 10vh;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
