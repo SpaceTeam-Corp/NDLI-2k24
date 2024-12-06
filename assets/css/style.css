@@ -1,0 +1,132 @@
+:root {
+    --backgound-color : #F2F2F2;
+    --primary-color: #0597F2;
+    --second-color: #0477BF;
+    --third-color: #05AFF2;
+    --fourth-color: #5CD7F2;
+}
+
+::selection {
+    background: black;
+    color: white;
+}
+
+@font-face {
+    font-family: Dyna;
+    src: url(../fonts/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Dyna;
+    background: #F2F2F2;
+    overflow-x: hidden;
+}
+
+#videoBg {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main {
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.about h1 {
+    background: var(--second-color);
+    padding: 16px 32px;
+}
+
+.about p {
+    margin: 40px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: var(--second-color);
+}
+
+.about a  {
+    font-size: 3em;
+    padding: 16px 36px;
+    color: var(--backgound-color);
+    transition: 0.4s;
+}
+
+.about a:hover  {
+    font-size: 4em;
+    transition: 0.4s;
+    padding: 16px 36px;
+    color: var(--third-color);
+}
+
+.second-div {
+    background: var(--second-color);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: column;
+}
+
+.content a{
+    text-align: center;
+    width: 200px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.content a:hover {
+    background: #ddd;
+    color: var(--fourth-color);
+}
+
+.credit-video a {
+    color: var(--backgound-color);
+    font-size: 10px;
+    text-decoration: none;
+    background: none;
+}
+
+.credit-video a:hover {
+    background: none;
+    color: var(--fourth-color);
+}
+
+.bits {
+    color: white;
+    margin: 32px;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.bits:hover {
+    color: red;
+    transition: 0.2s;
+}
