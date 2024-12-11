@@ -52,6 +52,18 @@ audio {
     }
 }
 
+#popup{
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #76c7c0;
+    border-radius: 25px;
+}
+
 /* Boutons */
 .button2 {
     background-color: #76c7c0;
@@ -110,4 +122,25 @@ h3, h4 {
 
 #chillness:hover {
     transform: scale(1.2);
+}
+
+button {
+    background-color: #ffffff; /* Blanc pour un contraste léger */
+    color: #4fa3a0; /* Vert doux pour correspondre à l'ambiance "chill" */
+    border: 2px solid black;
+    border-radius: 8px; /* Coins arrondis pour un design plus fluide */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4fa3a0; /* Passe au vert lors du survol */
+    color: #ffffff; /* Texte blanc pour un contraste clair */
+}
+
+button:active {
+    transform: scale(0.98); /* Effet de clic */
 }
